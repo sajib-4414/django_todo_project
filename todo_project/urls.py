@@ -20,4 +20,5 @@ from apps.todo_app import urls as todo_urls
 urlpatterns = [
     url(r'^todos/', include(todo_urls)),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include(todo_urls)),
 ]
